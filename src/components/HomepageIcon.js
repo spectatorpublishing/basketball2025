@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import white_crown from '../images/white_crown 1.png';
 
-
 const IconContainer = styled.div`
     position: relative;
     width: 70px;

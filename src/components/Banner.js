@@ -6,20 +6,22 @@ import HomepageIcon from './HomepageIcon'
 // Styled Component for the background image
 const BackgroundImage = styled.div`
     width: 100%;
-    min-height: 860px;
-    flex-shrink: 0;
+    height: 100vh;
+
     background-image: url(${backgroundImage});
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: 50% 70%;
+
+    position: relative; 
 `;
+
 
 const IconWrapper = styled.a`
     display: block;
     width: 70px;
     height: 70px;
     flex-shrink: 0;
-
+    
     position: absolute;
     right: 0;
     top: 51px;
@@ -34,11 +36,9 @@ const IconWrapper = styled.a`
 const Banner = () => {
   return(
     <BackgroundImage>
-
         <IconWrapper href="https://www.columbiaspectator.com/" >
             <HomepageIcon/>
         </IconWrapper>
-        
     </BackgroundImage>
   );
 };
