@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import white_crown from '../images/white_crown 1.png';
+
 
 const IconContainer = styled.div`
     position: relative;
@@ -43,7 +43,7 @@ const CircleIcon = ({ imageUrl }) => {
 const HomepageIcon = () => {
     return (
         <div>
-        <CircleIcon imageUrl={white_crown} />
+        <CircleIcon imageUrl="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/LC75RL476NFG3P677LOBAW2MXE.png" />
         </div>
     );
 };

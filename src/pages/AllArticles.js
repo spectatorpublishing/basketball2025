@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Banner from "../components/Banner";
-import { general_articles } from "../data/generalarticles";
+import { all_articles } from "../data/allarticles";
 import ArticleComponent from "../components/ArticleComponent";
 import NavigationSec from '../components/Navagation';
 import Navbar from '../components/Navbar';
@@ -35,7 +35,7 @@ return (
     <Banner />
     <Navbar />
     <ArticleWrapper>
-        {general_articles.map((article) => (
+        {all_articles.map((article) => (
         <ArticleComponent key={article.article_link} article={article} />
         ))}
     </ArticleWrapper>

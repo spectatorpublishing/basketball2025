@@ -21,6 +21,11 @@ const NavWrap = styled.div`
     border: 5px solid #F7ECE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
                 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 768px) {
+        height: 69.352px;
+        margin-bottom: 0px;
+    }
 `;
 
 const Title = styled.div`
@@ -30,6 +35,10 @@ const Title = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @media (max-width: 768px) {
+        font-size:10px;
+    }
 `;
 
 const TextWrap = styled.a`
@@ -43,7 +52,7 @@ const TextWrap = styled.a`
     align-items: center;
     justify-content: center;
 
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow", sans-sserif;
     text-transform: uppercase;
     color: white;
     background: rgba(54, 58, 54, 0.96);
@@ -54,6 +63,13 @@ const TextWrap = styled.a`
         background-color: #F7ECE5;
         color: #3C5D64;
     }
+
+    @media (max-width: 768px) {
+        font-size:1em;
+        width:40%;
+        height: 49.707px;
+    }
+
 `;
 
 const Next = styled.div`
@@ -69,6 +85,10 @@ const Next = styled.div`
         &:hover {
         text-decoration: underline;
         }
+    }
+
+    @media (max-width: 768px) {
+        font-size:10px;
     }
 `;
 

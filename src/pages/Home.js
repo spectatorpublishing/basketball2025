@@ -4,166 +4,203 @@ import styled from 'styled-components';
 import NavigationSec from '../components/Navagation';
 import Credits from '../components/Credits';
 import '@fontsource/paytone-one';
+import MobileNavBar from '../components/MobileNavBar';
+import ShareButton from '../components/SocialShare';
 
 const PageWrapper = styled.div`
     background: #3C5D64;
     width: 100%;
-    height:auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center; 
+    justify-content: center;
 `;
 
 const Title = styled.div`
     width: 922px;
-    height: 95px;
+    height: auto; 
     flex-shrink: 0;
 
     border: 6px solid #F7ECE5;
     color: #F7ECE5;
     
-    margin-top: 106px;
-    
     text-align: center;
+
     font-family: "Paytone One";
-    font-size: 56px;
+    font-size: 3.5rem; 
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 5.6px;
+    letter-spacing: 0.35rem; 
+
+    @media (max-width: 768px) {
+        width: 90%;
+        font-size: 2rem; 
+        margin-top: 10px;
+    }
 `;
 
 const LetterFromEditorWrapper = styled.div`
     width: 85%;
+    max-width: 1200px; 
     height: auto;
     flex-shrink: 0;
     border: 5px solid #F7ECE5;
 
-    margin-top: 26px;
-    margin-left: 112px;
-    margin-right: 112px;
+    margin-top: 1.625rem; 
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
     flex-direction: column; 
     align-items: center;    
-    text-align: center;   
+    text-align: center;  
+
+    @media (max-width: 768px) {
+        width: 90%;
+        margin-top: 1rem;
+        border: 3px solid #F7ECE5; 
+    } 
 `;
 
-
 const LetterFromEdititor = styled.div`
-    padding-top:50px;
-    padding-bottom: 31px;
+    padding-top: 3rem;   
+    padding-bottom: 2rem;
 
     width: 85%;
-    height: auto;
-    flex-shrink: 0;
     color: #F7ECE5;
 
     text-align: center;
     font-family: Inter;
-    font-size: 23px;
+    font-size: 1.4375rem;  
     font-style: normal;
     font-weight: 500;
-    line-height: 28px; 
-    letter-spacing: 0.46px;
+    line-height: 1.5;
+    letter-spacing: 0.046rem; 
+
+    @media (max-width: 768px) {
+      width: 90%;
+      font-size: 1.125rem; 
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
 `;
 
 const SportsEditorLayout = styled.div`
     display: flex;
     flex-direction: row; 
-    gap: 290px; 
-`
+    gap: 18rem; 
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+`;
+
 const SportsEditorWrapper = styled.div`
-    width: 142px;
+    width: auto; 
     height: auto;
     display: flex;
-
-    padding: 10px;
-    padding-bottom:50px;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #F7ECE5
-`
+
+    padding: 0.625rem; 
+    padding-bottom: 3rem;
+    color: #F7ECE5;
+
+    @media (max-width: 768px) {
+        width: auto;
+        padding-bottom: 1rem;
+    }
+`;
 
 const NameStyling = styled.div`
     color: #F7ECE5;
     font-family: Sacramento;
-    font-size: 35px;
+    font-size: 2.1875rem; 
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-`
+    white-space: nowrap; 
+    
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+`;
 
 const Subtitle = styled.div`
     color: #F7ECE5;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 1.25rem; 
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-`
+
+    @media (max-width: 768px) {
+      font-size: 1rem; 
+    }
+`;
 
 const Home = () => {
     return (
-        <PageWrapper> 
-        <Banner />
-
-        <Title> LETTER FROM THE EDITORS </Title>
-        
-        <LetterFromEditorWrapper>
-            <LetterFromEdititor>
-                <p>
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. A mollis amet vitae sed purus, semper ullamcorper augue vitae. Hac pretium urna, tempus sit quam suspendisse maecenas et. Egestas neque sollicitudin rhoncus vitae at ipsum pulvinar faucibus. Facilisi risus blandit egestas in dignissim et sapien faucibus. Tortor accumsan 
-                libero sed aliquam dui magna vitae, habitant egestas. Consectetur egestas tellus auctor interdum id gravida quis pellentesque. 
-
-                </p>
-                
-                <p>
-                At amet nulla tellus orci gravida. Egestas aenean mauris in velit. Fermentum consectetur augue et 
-                habitant commodo, libero odio. Id nascetur vel eu fermentum elementum ac cras enim. Dui habitant commodo consequat sit in molestie in id. Ipsum volutpat etiam tristique fringilla. Tellus eu quis mauris massa tristique tortor,
-                egestas luctus lacus. Gravida facilisis sagittis eget facilisi molestie amet, ut pellentesque morbi.ssa facilisis non enim arcu.
-
-                </p>
+        <PageWrapper>
             
+            <MobileNavBar current = {"home"} />
+            
+            <Banner />
+            <ShareButton />
 
-                <p>
-                Euis mod cursus neque, feugiat vestibulum ornare. Feugiat feugiat tincidunt purus mauris quis lectus neque, molestie. Sed auctor sit fusce tristiqu
-                e. Nisl eu nullam gravida massa morbi purus. Ullamcorper eget sed venenatis enim, elit. In cursus pellentesque lacus ornare a. 
-                </p>    
+            <Title>LETTER FROM THE EDITORS</Title>
+            
+            <LetterFromEditorWrapper>
+                <LetterFromEdititor>
+                    <p>
+                    Dear readers,
+                    </p>
+                    
+                    <p>
+                    Last year, Columbia basketball made history. The women’s team earned its first bid to the Big Dance. Ivy Madness, hosted at Levien Gymnasium for the first time, brought fans from all
+                    over the conference into our den.  In the fall, fans were treated to an exciting start to the season as the men’s team had its best start since 1969.
+                    As we move further into Ivy play, the women’s team is on the prowl for its first Ivy tournament title and second consecutive bid to March Madness.
+                    </p>
+                
+                    <p>
+                    In this special edition, our staff takes you through what to expect from conference play, reflects on the stars of the season,
+                    and looks at the changing landscape of college basketball. From recaps of recent games to reviews of new recruits,
+                    Lions fans old and new need not look further for an in-depth guide to everything Columbia basketball has to offer. 
+                    With another historic year in the making, we hope to see you in the stands at Levien.
+                    </p>
 
-            </LetterFromEdititor>
+                    <p>
+                    Thanks for reading!
+                    </p>
+                </LetterFromEdititor>
 
                 <SportsEditorLayout>
                     <SportsEditorWrapper>
-                        <NameStyling>First Last</NameStyling>
+                        <NameStyling>Arielle Rieder</NameStyling>
                         <Subtitle>Sports Editor</Subtitle>
                     </SportsEditorWrapper>
 
                     <SportsEditorWrapper>
-                        <NameStyling>First Last</NameStyling>
+                        <NameStyling>Jillian Prunty</NameStyling>
                         <Subtitle>Sports Editor</Subtitle>
                     </SportsEditorWrapper>
-
                 </SportsEditorLayout>
+            </LetterFromEditorWrapper>
 
-        </LetterFromEditorWrapper>
+            <NavigationSec 
+                first={true}            
+                next="All Basketball"         
+                link="/all"        
+            />
 
-        <NavigationSec 
-        first={true}            
-        next="All Basketball"         // Text to display after "Next: "
-        link="/all"        // The route to navigate to
-        />
-
-        <Credits></Credits>
-
-
-
-
-
+            <Credits />
         </PageWrapper>
     );
 };

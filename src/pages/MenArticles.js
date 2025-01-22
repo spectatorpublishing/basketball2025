@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Banner from "../components/Banner";
-import { general_articles } from "../data/generalarticles";
+import { men_articles } from "../data/menarticles";
 import ArticleComponent from "../components/ArticleComponent";
 import NavigationSec from '../components/Navagation';
 import Navbar from '../components/Navbar';
@@ -27,15 +27,14 @@ const NavigationWrapper = styled.div`
   margin-top: 2rem; 
 `;
 
-const GeneralArticles = () => {
+const MenArticles = () => {
 return (
     <div>
-
     <MobileNavBar current = {"all"} />
     <Banner />
     <Navbar />
     <ArticleWrapper>
-        {general_articles.map((article) => (
+        {men_articles.map((article) => (
         <ArticleComponent key={article.article_link} article={article} />
         ))}
     </ArticleWrapper>
@@ -47,8 +46,9 @@ return (
             link="/"        
         />
     </NavigationWrapper>
+
     </div>
 );
 };
 
-export default GeneralArticles;
+export default MenArticles;

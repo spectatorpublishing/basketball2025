@@ -1,20 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
-import backgroundImage from  '../images/backgroundimg.png'
+import backgroundImage from  '../images/navimage.png'
 import HomepageIcon from './HomepageIcon'
 
-// Styled Component for the background image
 const BackgroundImage = styled.div`
-    width: 100%;
-    height: 100vh;
 
     background-image: url(${backgroundImage});
-    background-size: cover;
+
     background-position: 50% 70%;
+    background-size: cover;
+    background-position: top;
+    width:100%;
+    height: 100vh;
+    
+    @media (max-width: 500px) {
+        width:100%;
+        height: 110vh;
+    }
 
-    position: relative; 
+    @media (max-width: 768px) {
+        height:25vh;
+        position: relative;
+    }
+
 `;
-
 
 const IconWrapper = styled.a`
     display: block;
@@ -29,9 +38,11 @@ const IconWrapper = styled.a`
 
     cursor: pointer; 
     text-decoration: none; 
+
+    @media (max-width: 768px) {
+        display: none; 
+    }
 `;
-
-
 
 const Banner = () => {
   return(
