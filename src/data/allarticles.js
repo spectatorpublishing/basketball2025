@@ -82,5 +82,11 @@ export const all_articles = [
         article_title: "Geronimo Rubio De La Rosa’s ascent to Lions stardom through the numbers",
         article_authors: "Lucas Metzger, Emilia Lebeau",
         article_link: "https://www.columbiaspectator.com/sports/2025/01/21/geronimo-rubio-de-la-rosas-ascent-to-lions-stardom-through-the-numbers/"
+    }, 
+    {
+        image_url: "https://www.columbiaspectator.com/resizer/v2/WVYM3X44CFGVFJIKJAYXDJDVO4.jpg?auth=2ae653d2e7e3180ff16c30d13383a2e17dd70c9bd5e2645f6ad794e0d7e8e1df",
+        article_title: "How associate head coach Tyler Cordell centers trust and family on the court",
+        article_authors: "Olivia Madkins",
+        article_link: "https://www.columbiaspectator.com/sports/2025/01/21/how-associate-head-coach-tyler-cordell-centers-trust-and-family-on-the-court/"
     }
 ];

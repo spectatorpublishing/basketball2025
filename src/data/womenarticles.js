@@ -36,9 +36,16 @@ export const women_articles = [
         article_link:"https://www.columbiaspectator.com/sports/2025/01/19/womens-basketball-takes-down-yale-in-new-haven/"
     },
     {
-        "image_url": "https://www.columbiaspectator.com/resizer/v2/RJPL4XYXB5HTBE6ZRR4RZRHCKA.jpg?auth=25eca73f4370fbc3ffd7cfd938da8e14fc2a9428e58528c5ed8c27e3e271bdaa",
-        "article_title": "Women’s basketball defeats Princeton, 58-50",
-        "article_authors": "Arielle Rieder, Jllian Prunty",
-        "article_link": "https://www.columbiaspectator.com/sports/2025/01/20/womens-basketball-defeats-princeton-58-50/"
+        image_url: "https://www.columbiaspectator.com/resizer/v2/RJPL4XYXB5HTBE6ZRR4RZRHCKA.jpg?auth=25eca73f4370fbc3ffd7cfd938da8e14fc2a9428e58528c5ed8c27e3e271bdaa",
+        article_title: "Women’s basketball defeats Princeton, 58-50",
+        article_authors: "Arielle Rieder, Jllian Prunty",
+        article_link: "https://www.columbiaspectator.com/sports/2025/01/20/womens-basketball-defeats-princeton-58-50/"
+    },
+    {
+        image_url: "https://www.columbiaspectator.com/resizer/v2/WVYM3X44CFGVFJIKJAYXDJDVO4.jpg?auth=2ae653d2e7e3180ff16c30d13383a2e17dd70c9bd5e2645f6ad794e0d7e8e1df",
+        article_title: "How associate head coach Tyler Cordell centers trust and family on the court",
+        article_authors: "Olivia Madkins",
+        article_link: "https://www.columbiaspectator.com/sports/2025/01/21/how-associate-head-coach-tyler-cordell-centers-trust-and-family-on-the-court/"
+
     }
 ];

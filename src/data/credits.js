@@ -15,7 +15,8 @@ export const credits = {
       { staff_name: "Nicholas Fink", title: "Deputy Sports Editor" },
       { staff_name: "Benjamin Rubin", title: "Staff Writer" },
       { staff_name: "Kaya Quebada", title: "Staff Writer" },
-      { staff_name: "Andrew Vincenti", title: "Staff Writer" }
+      { staff_name: "Andrew Vincenti", title: "Staff Writer" },
+      {staff_name: "Olivia Madkins", title:"Staff Writer"}
   ],
   "Copy": [
       { staff_name: "Posey Chiddix", title: "Head Copy Editor" },
