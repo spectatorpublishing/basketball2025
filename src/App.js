@@ -13,17 +13,16 @@ function App() {
   return (
 <div>
   <ScrollToTop/>
-  <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/all" element={<AllArticles />} /> 
-          <Route path="/general" element={<GeneralArticles />} />
-          <Route path="/women-basketball" element={<WomenArticles />} />
-          <Route path="/men-basketball" element={<MenArticles />} />
-  </Routes>
+    <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/all" element={<AllArticles />} /> 
+            <Route path="/general" element={<GeneralArticles />} />
+            <Route path="/women-basketball" element={<WomenArticles />} />
+            <Route path="/men-basketball" element={<MenArticles />} />
+    </Routes>
 </div>
 
   );
 }
 
 export default App;
-
