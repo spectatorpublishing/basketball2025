@@ -41,5 +41,10 @@ export const credits = {
   "Product": [
       { staff_name: "Daniela Velazquez", title: "Head of Product" },
       { staff_name: "Melinda Yao", title: "Product Deputy" }
+  ],
+  "Graphics":[
+    {   staff_name:	"Jenny Ye"	, title: "Graphics Editor"},
+    {   staff_name:	"Alison Chiu"	, title: "Graphics Reporter"},
+    {   staff_name:	"Emilia Lebeau"	, title: "Graphics Reporter"}
   ]
 };
