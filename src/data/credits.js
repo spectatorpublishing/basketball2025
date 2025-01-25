@@ -1,6 +1,6 @@
 export const credits = {
   "Corporate Board": [
-      { staff_name: "Shea Vance", title: "Editor-in-Chief" },
+      { staff_name: "Shea Vance", title: "Editor in Chief" },
       { staff_name: "Heather Chen", title: "Managing Editor" },
       { staff_name: "Albert Tsai", title: "Publisher" }
   ],
@@ -33,6 +33,7 @@ export const credits = {
       { staff_name: "Kelsea Petersen", title: "Senior Staff Illustrator" }
   ],
   "Photo": [
+      { staff_name: "Stella Ragas", title: "Photo Editor "  },
       { staff_name: "Esmeralda Paredes", title: "Deputy Photo Editor" },
       { staff_name: "Salem Maru", title: "Deputy Photo Editor" }
   ],
